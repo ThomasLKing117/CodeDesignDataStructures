@@ -3,11 +3,13 @@
 template<typename Type>
 linkedListIterator<Type>::linkedListIterator()
 {
+
 }
 
 template<typename Type>
 linkedListIterator<Type>::linkedListIterator(nodeType<Type>)
 {
+
 }
 
 template<typename Type>
@@ -19,17 +21,17 @@ Type linkedListIterator<Type>::operator*()
 template<typename Type>
 linkedListIterator<Type> linkedListIterator<Type>::operator++()
 {
-	return linkedListIterator<Type>();
+	return current->link++;
 }
 
 template<typename Type>
-bool linkedListIterator<Type>::operator==(const linkedListIterator<Type>&) const
+bool linkedListIterator<Type>::operator==(const linkedListIterator<Type>& other) const
 {
-	return false;
+	return this->current == other.current;
 }
 
 template<typename Type>
-bool linkedListIterator<Type>::operator!=(const linkedListIterator<Type>&) const
+bool linkedListIterator<Type>::operator!=(const linkedListIterator<Type>& other) const
 {
-	return false;
+	return this->current != other.current;
 }
