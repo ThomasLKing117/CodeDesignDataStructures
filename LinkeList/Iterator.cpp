@@ -1,6 +1,16 @@
 #include "Iterator.h"
 
 template<typename Type>
+linkedListIterator<Type>::linkedListIterator()
+{
+}
+
+template<typename Type>
+linkedListIterator<Type>::linkedListIterator(nodeType<Type>)
+{
+}
+
+template<typename Type>
 Type linkedListIterator<Type>::operator*()
 {
 	return Type();

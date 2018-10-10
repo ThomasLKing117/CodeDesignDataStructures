@@ -7,7 +7,7 @@ void linkedListType<Type>::copyList(const linkedListType<Type>&)
 }
 
 template<typename Type>
-const linkedlistType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>&)
+const linkedListType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>&)
 {
 
 }

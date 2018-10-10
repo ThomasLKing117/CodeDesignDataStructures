@@ -12,7 +12,7 @@ protected:
 	nodeType<Type> *first;
 	nodeType<Type> *last;
 public:
-	const linkedlistType<Type>& operator =(const linkedListType<Type>&);
+	const linkedListType<Type>& operator =(const linkedListType<Type>&);
 	void initalizeList();
 	bool isEmptyList() const;
 	void print() const;
