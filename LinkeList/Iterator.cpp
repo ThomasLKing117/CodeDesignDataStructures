@@ -15,7 +15,7 @@ linkedListIterator<Type>::linkedListIterator(nodeType<Type>)
 template<typename Type>
 Type linkedListIterator<Type>::operator*()
 {
-	return 
+	return this->current->info;
 }
 
 template<typename Type>
