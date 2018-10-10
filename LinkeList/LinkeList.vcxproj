@@ -117,12 +117,14 @@
   <ItemGroup>
     <ClCompile Include="Iterator.cpp" />
     <ClCompile Include="LinkedListType.cpp" />
+    <ClCompile Include="UnorderedLinkedList.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="NodeType.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Iterator.h" />
     <ClInclude Include="LinkedListType.h" />
+    <ClInclude Include="UnorderedLinkedList.h" />
     <ClInclude Include="NodeType.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
