@@ -2,10 +2,10 @@
 #include "NodeType.h"
 
 template <typename Type>
-class linkedListIterator<Type>
+class linkedListIterator
 {
 private:
-	nodeType<Type> *current
+	nodeType<Type> *current;
 public:
 	linkedListIterator();
 	linkedListIterator(nodeType<Type>);

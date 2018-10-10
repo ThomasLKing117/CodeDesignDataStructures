@@ -3,10 +3,10 @@
 #include "Iterator.h"
 
 template <typename Type>
-class linkedListType<Type>
+class linkedListType
 {
 private:
-	void copyList(const linkedListType<Type>&)
+	void copyList(const linkedListType<Type>&);
 protected:
 	int count;
 	nodeType<Type> *first;

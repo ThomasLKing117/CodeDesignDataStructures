@@ -1,7 +1,7 @@
 #pragma once
-template <class Type>
+template <typename Type>
 struct nodeType
 {
 	Type info;
-	node<Type> *link;
+	nodeType *link;
 };

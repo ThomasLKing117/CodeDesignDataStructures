@@ -1,6 +1,12 @@
 #include "LinkedListType.h"
 
 template<typename Type>
+void linkedListType<Type>::copyList(const linkedListType<Type>&)
+{
+
+}
+
+template<typename Type>
 const linkedlistType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>&)
 {
 
