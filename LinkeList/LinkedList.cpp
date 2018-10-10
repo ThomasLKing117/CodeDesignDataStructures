@@ -15,11 +15,7 @@ void linkedListType<Type>::initalizeList()
 template<typename Type>
 bool linkedListType<Type>::isEmptyList() const
 {
-	if (count == 0)
-	{
-		return true;
-	}
-	return false;
+	return (count == 0);
 }
 
 template<typename Type>
