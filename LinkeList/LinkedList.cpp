@@ -1,79 +1,83 @@
 #include "LinkedList.h"
 
 template<typename Type>
-inline const linkedlistType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>&)
-{
-	// TODO: insert return statement here
-}
-
-template<typename Type>
-inline void linkedListType<Type>::initalizeList()
+const linkedlistType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>&)
 {
 
 }
 
 template<typename Type>
-inline bool linkedListType<Type>::isEmptyList() const
+void linkedListType<Type>::initalizeList()
 {
+
+}
+
+template<typename Type>
+bool linkedListType<Type>::isEmptyList() const
+{
+	if (count == 0)
+	{
+		return true;
+	}
 	return false;
 }
 
 template<typename Type>
-inline void linkedListType<Type>::print() const
+void linkedListType<Type>::print() const
 {
 
 }
 
 template<typename Type>
-inline int linkedListType<Type>::length() const
+int linkedListType<Type>::length() const
 {
 	return 0;
 }
 
 template<typename Type>
-inline void linkedListType<Type>::destroyList() const
+void linkedListType<Type>::destroyList() const
 {
 
 }
 
 template<typename Type>
-inline Type linkedListType<Type>::front() const
-{
-	return Type();
-}
-
-template<typename Type>
-inline Type linkedListType<Type>::back() const
+Type linkedListType<Type>::front() const
 {
 	return Type();
 }
 
 template<typename Type>
-inline linkedListIterator<Type> linkedListType<Type>::begin()
+Type linkedListType<Type>::back() const
+{
+	return Type();
+}
+
+template<typename Type>
+linkedListIterator<Type> linkedListType<Type>::begin()
 {
 	return linkedListIterator<Type>();
 }
 
 template<typename Type>
-inline linkedListIterator<Type> linkedListType<Type>::end()
+linkedListIterator<Type> linkedListType<Type>::end()
 {
 	return linkedListIterator<Type>();
 }
 
 template<typename Type>
-inline linkedListType<Type>::linkedListType()
+linkedListType<Type>::linkedListType()
 {
 
 }
 
 template<typename Type>
-inline linkedListType<Type>::linkedListType(const linkedListType<Type>&)
+linkedListType<Type>::linkedListType(const linkedListType<Type>&)
 {
 
 }
 
 template<typename Type>
-inline linkedListType<Type>::~linkedListType()
+linkedListType<Type>::~linkedListType()
 {
 
 }

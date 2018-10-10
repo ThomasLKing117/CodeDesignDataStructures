@@ -1,5 +1,6 @@
 #pragma once
 #include "NodeType.h"
+#include "Iterator.h"
 
 template <typename Type>
 class linkedListType<Type>
