@@ -21,10 +21,10 @@
     <ClCompile Include="Iterator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedList.cpp">
+    <ClCompile Include="NodeType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NodeType.cpp">
+    <ClCompile Include="LinkedListType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +32,10 @@
     <ClInclude Include="Iterator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedList.h">
+    <ClInclude Include="NodeType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NodeType.h">
+    <ClInclude Include="LinkedListType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,4 +1,4 @@
-#include "LinkedList.h"
+#include "LinkedListType.h"
 
 template<typename Type>
 const linkedlistType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>&)

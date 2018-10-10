@@ -116,13 +116,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Iterator.cpp" />
-    <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="LinkedListType.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="NodeType.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Iterator.h" />
-    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="LinkedListType.h" />
     <ClInclude Include="NodeType.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
