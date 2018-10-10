@@ -15,13 +15,13 @@ linkedListIterator<Type>::linkedListIterator(nodeType<Type>)
 template<typename Type>
 Type linkedListIterator<Type>::operator*()
 {
-	return Type();
+	return 
 }
 
 template<typename Type>
 linkedListIterator<Type> linkedListIterator<Type>::operator++()
 {
-	return current->link++;
+	return current = current->link;
 }
 
 template<typename Type>
