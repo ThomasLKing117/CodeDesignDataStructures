@@ -3,16 +3,16 @@
 #include "Iterator.h"
 
 template <typename Type>
-class linkedList
+class LinkedList
 {
 private:
-	void copyList(const linkedList<Type>&);
+	void copyList(const LinkedList<Type>&);
 protected:
 	int count;
 	nodeType<Type> *first;
 	nodeType<Type> *last;
 public:
-	const linkedList<Type>& operator =(const linkedList<Type>&);
+	const LinkedList<Type>& operator =(const LinkedList<Type>&);
 	void initalizeList();
 	bool isEmptyList() const;
 	void print() const;
@@ -26,7 +26,7 @@ public:
 	void deleteNode(const Type&) const = 0;
 	Iterator<Type> begin();
 	Iterator<Type> end();
-	linkedList();
-	linkedList(const linkedList<Type>&);
-	~linkedList();
+	LinkedList();
+	LinkedList(const LinkedList<Type>&);
+	~LinkedList();
 };

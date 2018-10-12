@@ -1,7 +1,7 @@
 #include "Iterator.h"
-#include "linkedListType.h"
+#include "LinkedListType.h"
 #include "NodeType.h"
-#include "UnorderedlinkedList.h"
+#include "UnorderedLinkedList.h"
 
 int main()
 {

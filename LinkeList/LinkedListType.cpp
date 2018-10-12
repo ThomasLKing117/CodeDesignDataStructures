@@ -1,85 +1,85 @@
-#include "linkedListType.h"
+#include "LinkedListType.h"
 
 template<typename Type>
-void linkedList<Type>::copyList(const linkedList<Type>& copy)
+void LinkedList<Type>::copyList(const LinkedList<Type>& copy)
 {
-	copy = linkedList;
+	copy = LinkedList;
 }
 
 template<typename Type>
-const linkedList<Type>& linkedList<Type>::operator=(const linkedList<Type>& assign)
+const LinkedList<Type>& LinkedList<Type>::operator=(const LinkedList<Type>& assign)
 {
 	return first = assign
 }
 
 template<typename Type>
-void linkedList<Type>::initalizeList()
+void LinkedList<Type>::initalizeList()
 {
 
 }
 
 template<typename Type>
-bool linkedList<Type>::isEmptyList() const
+bool LinkedList<Type>::isEmptyList() const
 {
 	return (first == nullptr);
 }
 
 template<typename Type>
-void linkedList<Type>::print() const
+void LinkedList<Type>::print() const
 {
 
 }
 
 template<typename Type>
-int linkedList<Type>::length() const
+int LinkedList<Type>::length() const
 {
 	return 0;
 }
 
 template<typename Type>
-void linkedList<Type>::destroyList() const
+void LinkedList<Type>::destroyList() const
 {
 
 }
 
 template<typename Type>
-Type linkedList<Type>::front() const
-{
-	return Type();
-}
-
-template<typename Type>
-Type linkedList<Type>::back() const
+Type LinkedList<Type>::front() const
 {
 	return Type();
 }
 
 template<typename Type>
-Iterator<Type> linkedList<Type>::begin()
+Type LinkedList<Type>::back() const
+{
+	return Type();
+}
+
+template<typename Type>
+Iterator<Type> LinkedList<Type>::begin()
 {
 	return Iterator<Type>();
 }
 
 template<typename Type>
-Iterator<Type> linkedList<Type>::end()
+Iterator<Type> LinkedList<Type>::end()
 {
 	return Iterator<Type>();
 }
 
 template<typename Type>
-linkedList<Type>::linkedList()
+LinkedList<Type>::LinkedList()
 {
 
 }
 
 template<typename Type>
-linkedList<Type>::linkedList(const linkedList<Type>&)
+LinkedList<Type>::LinkedList(const LinkedList<Type>&)
 {
 
 }
 
 template<typename Type>
-linkedList<Type>::~linkedList()
+LinkedList<Type>::~LinkedList()
 {
 
 }

@@ -1,8 +1,8 @@
 #pragma once
-#include "linkedListType.h"
+#include "LinkedListType.h"
 
 template <typename Type>
-class UnorderedlinkedList : linkedList<Type>
+class UnorderedLinkedList : LinkedList<Type>
 {
 public:
 	bool search(const Type&) const;
