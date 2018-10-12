@@ -21,8 +21,8 @@ public:
 	Type front() const;
 	Type back() const;
 	bool search(const Type&) const = 0;
-	void insertFirst(const Type&) const = 0;
-	void insertLast(const Type&) const = 0;
+	void pushFront(const Type&) const = 0;
+	void pushLast(const Type&) const = 0;
 	void deleteNode(const Type&) const = 0;
 	Iterator<Type> begin();
 	Iterator<Type> end();

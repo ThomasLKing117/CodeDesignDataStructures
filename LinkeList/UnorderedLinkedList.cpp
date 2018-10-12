@@ -7,13 +7,13 @@ inline bool UnorderedlinkedList<Type>::search(const Type &) const
 }
 
 template<typename Type>
-inline void UnorderedlinkedList<Type>::insertFirst(const Type &)
+inline void UnorderedlinkedList<Type>::pushFirst(const Type &)
 {
 
 }
 
 template<typename Type>
-inline void UnorderedlinkedList<Type>::insertLast(const Type &)
+inline void UnorderedlinkedList<Type>::pushLast(const Type &)
 {
 
 }
