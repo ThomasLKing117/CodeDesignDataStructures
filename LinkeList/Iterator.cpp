@@ -1,37 +1,37 @@
 #include "Iterator.h"
 
 template<typename Type>
-linkedListIterator<Type>::linkedListIterator()
+Iterator<Type>::Iterator()
 {
 	current = nullptr;
 }
 
 template<typename Type>
-linkedListIterator<Type>::linkedListIterator(nodeType<Type> reference)
+Iterator<Type>::Iterator(nodeType<Type> reference)
 {
 	current = &reference;
 }
 
 template<typename Type>
-Type linkedListIterator<Type>::operator*()
+Type Iterator<Type>::operator*()
 {
 	return this->current->info;
 }
 
 template<typename Type>
-linkedListIterator<Type> linkedListIterator<Type>::operator++()
+Iterator<Type> Iterator<Type>::operator++()
 {
 	return current = current->link;
 }
 
 template<typename Type>
-bool linkedListIterator<Type>::operator==(const linkedListIterator<Type>& other) const
+bool Iterator<Type>::operator==(const Iterator<Type>& other) const
 {
 	return this->current == other.current;
 }
 
 template<typename Type>
-bool linkedListIterator<Type>::operator!=(const linkedListIterator<Type>& other) const
+bool Iterator<Type>::operator!=(const Iterator<Type>& other) const
 {
 	return this->current != other.current;
 }

@@ -1,85 +1,85 @@
 #include "LinkedListType.h"
 
 template<typename Type>
-void linkedListType<Type>::copyList(const linkedListType<Type>&)
+void LinkedList<Type>::copyList(const LinkedList<Type>&)
 {
 
 }
 
 template<typename Type>
-const linkedListType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>&)
+const LinkedList<Type>& LinkedList<Type>::operator=(const LinkedList<Type>&)
 {
 
 }
 
 template<typename Type>
-void linkedListType<Type>::initalizeList()
+void LinkedList<Type>::initalizeList()
 {
 
 }
 
 template<typename Type>
-bool linkedListType<Type>::isEmptyList() const
+bool LinkedList<Type>::isEmptyList() const
 {
 	return (first == nullptr);
 }
 
 template<typename Type>
-void linkedListType<Type>::print() const
+void LinkedList<Type>::print() const
 {
 
 }
 
 template<typename Type>
-int linkedListType<Type>::length() const
+int LinkedList<Type>::length() const
 {
 	return 0;
 }
 
 template<typename Type>
-void linkedListType<Type>::destroyList() const
+void LinkedList<Type>::destroyList() const
 {
 
 }
 
 template<typename Type>
-Type linkedListType<Type>::front() const
-{
-	return Type();
-}
-
-template<typename Type>
-Type linkedListType<Type>::back() const
+Type LinkedList<Type>::front() const
 {
 	return Type();
 }
 
 template<typename Type>
-linkedListIterator<Type> linkedListType<Type>::begin()
+Type LinkedList<Type>::back() const
 {
-	return linkedListIterator<Type>();
+	return Type();
 }
 
 template<typename Type>
-linkedListIterator<Type> linkedListType<Type>::end()
+Iterator<Type> LinkedList<Type>::begin()
 {
-	return linkedListIterator<Type>();
+	return Iterator<Type>();
 }
 
 template<typename Type>
-linkedListType<Type>::linkedListType()
+Iterator<Type> LinkedList<Type>::end()
+{
+	return Iterator<Type>();
+}
+
+template<typename Type>
+LinkedList<Type>::LinkedList()
 {
 
 }
 
 template<typename Type>
-linkedListType<Type>::linkedListType(const linkedListType<Type>&)
+LinkedList<Type>::LinkedList(const LinkedList<Type>&)
 {
 
 }
 
 template<typename Type>
-linkedListType<Type>::~linkedListType()
+LinkedList<Type>::~LinkedList()
 {
 
 }

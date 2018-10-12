@@ -2,7 +2,7 @@
 #include "LinkedListType.h"
 
 template <typename Type>
-class UnorderedLinkedList : linkedListType<Type>
+class UnorderedLinkedList : LinkedList<Type>
 {
 public:
 	bool search(const Type&) const;

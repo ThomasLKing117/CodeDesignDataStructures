@@ -2,15 +2,15 @@
 #include "NodeType.h"
 
 template <typename Type>
-class linkedListIterator
+class Iterator
 {
 private:
 	nodeType<Type> *current;
 public:
-	linkedListIterator();
-	linkedListIterator(nodeType<Type>);
+	Iterator();
+	Iterator(nodeType<Type>);
 	Type operator *();
-	linkedListIterator<Type> operator ++();
-	bool operator ==(const linkedListIterator<Type>&) const;
-	bool operator !=(const linkedListIterator<Type>&) const;
+	Iterator<Type> operator ++();
+	bool operator ==(const Iterator<Type>&) const;
+	bool operator !=(const Iterator<Type>&) const;
 };
