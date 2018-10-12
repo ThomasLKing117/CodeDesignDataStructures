@@ -15,13 +15,13 @@ Iterator<Type>::Iterator(nodeType<Type> reference)
 template<typename Type>
 Type Iterator<Type>::operator*()
 {
-	return this->current->info;
+	return current->info;
 }
 
 template<typename Type>
 Iterator<Type> Iterator<Type>::operator++()
 {
-	return current = current->link;
+	return current = current->next;
 }
 
 template<typename Type>

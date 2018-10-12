@@ -3,5 +3,5 @@ template <typename Type>
 struct nodeType
 {
 	Type info;
-	nodeType *link;
+	nodeType *next;
 };

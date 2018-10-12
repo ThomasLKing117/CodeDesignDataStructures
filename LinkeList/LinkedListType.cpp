@@ -1,85 +1,85 @@
-#include "LinkedListType.h"
+#include "linkedListType.h"
 
 template<typename Type>
-void LinkedList<Type>::copyList(const LinkedList<Type>&)
+void linkedList<Type>::copyList(const linkedList<Type>& copy)
+{
+	copy = linkedList;
+}
+
+template<typename Type>
+const linkedList<Type>& linkedList<Type>::operator=(const linkedList<Type>& assign)
+{
+	return first = assign
+}
+
+template<typename Type>
+void linkedList<Type>::initalizeList()
 {
 
 }
 
 template<typename Type>
-const LinkedList<Type>& LinkedList<Type>::operator=(const LinkedList<Type>&)
-{
-
-}
-
-template<typename Type>
-void LinkedList<Type>::initalizeList()
-{
-
-}
-
-template<typename Type>
-bool LinkedList<Type>::isEmptyList() const
+bool linkedList<Type>::isEmptyList() const
 {
 	return (first == nullptr);
 }
 
 template<typename Type>
-void LinkedList<Type>::print() const
+void linkedList<Type>::print() const
 {
 
 }
 
 template<typename Type>
-int LinkedList<Type>::length() const
+int linkedList<Type>::length() const
 {
 	return 0;
 }
 
 template<typename Type>
-void LinkedList<Type>::destroyList() const
+void linkedList<Type>::destroyList() const
 {
 
 }
 
 template<typename Type>
-Type LinkedList<Type>::front() const
-{
-	return Type();
-}
-
-template<typename Type>
-Type LinkedList<Type>::back() const
+Type linkedList<Type>::front() const
 {
 	return Type();
 }
 
 template<typename Type>
-Iterator<Type> LinkedList<Type>::begin()
+Type linkedList<Type>::back() const
+{
+	return Type();
+}
+
+template<typename Type>
+Iterator<Type> linkedList<Type>::begin()
 {
 	return Iterator<Type>();
 }
 
 template<typename Type>
-Iterator<Type> LinkedList<Type>::end()
+Iterator<Type> linkedList<Type>::end()
 {
 	return Iterator<Type>();
 }
 
 template<typename Type>
-LinkedList<Type>::LinkedList()
+linkedList<Type>::linkedList()
 {
 
 }
 
 template<typename Type>
-LinkedList<Type>::LinkedList(const LinkedList<Type>&)
+linkedList<Type>::linkedList(const linkedList<Type>&)
 {
 
 }
 
 template<typename Type>
-LinkedList<Type>::~LinkedList()
+linkedList<Type>::~linkedList()
 {
 
 }
