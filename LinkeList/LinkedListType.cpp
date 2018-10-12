@@ -39,7 +39,7 @@ int LinkedList<Type>::length() const
 template<typename Type>
 void LinkedList<Type>::destroyList() const
 {
-
+	delete LinkedList;
 }
 
 template<typename Type>
