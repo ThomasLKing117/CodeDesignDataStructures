@@ -3,13 +3,13 @@
 template<typename Type>
 linkedListIterator<Type>::linkedListIterator()
 {
-
+	current = nullptr;
 }
 
 template<typename Type>
-linkedListIterator<Type>::linkedListIterator(nodeType<Type>)
+linkedListIterator<Type>::linkedListIterator(nodeType<Type> reference)
 {
-
+	current = &reference;
 }
 
 template<typename Type>
