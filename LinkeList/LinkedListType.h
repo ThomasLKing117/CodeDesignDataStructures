@@ -1,5 +1,4 @@
 #pragma once
-#include "NodeType.h"
 #include "Iterator.h"
 
 template <typename Type>
@@ -21,9 +20,9 @@ public:
 	Type front() const;
 	Type back() const;
 	virtual	bool search(const Type&) const = 0;
-	virtual void pushFront(const Type&) const = 0;
-	virtual void pushLast(const Type&) const = 0;
-	virtual void deleteNode(const Type&) const = 0;
+	virtual void pushFront(const Type&) = 0;
+	virtual void pushLast(const Type&) = 0;
+	virtual void deleteNode(const Type&) = 0;
 	Iterator<Type> begin();
 	Iterator<Type> end();
 	LinkedList();
