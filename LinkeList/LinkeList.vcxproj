@@ -116,9 +116,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Iterator.cpp" />
-    <ClCompile Include="LinkedListType.cpp" />
-    <ClCompile Include="UnorderedLinkedList.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
