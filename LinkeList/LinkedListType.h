@@ -75,13 +75,13 @@ void LinkedList<Type>::destroyList() const
 template<typename Type>
 Type LinkedList<Type>::front() const
 {
-	return Type();
+	return first->info;
 }
 
 template<typename Type>
 Type LinkedList<Type>::back() const
 {
-	return Type();
+	return last->info;
 }
 
 template<typename Type>

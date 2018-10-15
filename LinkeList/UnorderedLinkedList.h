@@ -7,6 +7,10 @@ class UnorderedLinkedList : public LinkedList<Type>
 public:
 	bool search(const Type& item) const override
 	{
+		for (int i = 0; i < count; i++)
+		{
+			
+		}
 		return false;
 	}
 
