@@ -8,7 +8,7 @@ private:
 	nodeType<Type> *current;
 public:
 	Iterator();
-	Iterator(nodeType<Type>);
+	Iterator(nodeType<Type>*);
 	Type operator *();
 	Iterator<Type> operator ++();
 	bool operator ==(const Iterator<Type>&) const;
@@ -22,9 +22,9 @@ Iterator<Type>::Iterator()
 }
 
 template<typename Type>
-Iterator<Type>::Iterator(nodeType<Type> reference)
+Iterator<Type>::Iterator(nodeType<Type>* reference)
 {
-	current = &reference;
+	current = reference;
 }
 
 template<typename Type>
@@ -36,7 +36,8 @@ Type Iterator<Type>::operator*()
 template<typename Type>
 Iterator<Type> Iterator<Type>::operator++()
 {
-	return current = current->next;
+	current = current->next;
+	return *this;
 }
 
 template<typename Type>
