@@ -21,9 +21,6 @@
     <ClCompile Include="Iterator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NodeType.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LinkedListType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
