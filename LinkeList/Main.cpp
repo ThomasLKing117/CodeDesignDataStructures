@@ -23,5 +23,6 @@ int main()
 	List->pushLast(N6->info);
 	int front = List->front();
 	int back = List->back();
+	int find = List->search(N4->info);
 	return 0;
 }

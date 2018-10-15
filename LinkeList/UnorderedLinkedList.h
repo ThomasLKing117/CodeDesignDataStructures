@@ -8,9 +8,9 @@ public:
 	bool search(const Type& item) const override
 	{
 		nodeType<Type>* test = new nodeType<Type>;
-		for (int i = 0; i < count; i++)
+		for (int i = 0; i < this->count; i++)
 		{
-			if ()
+			if (test == item)
 			{
 				return true;
 			}
