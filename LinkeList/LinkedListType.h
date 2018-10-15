@@ -20,10 +20,10 @@ public:
 	void destroyList() const;
 	Type front() const;
 	Type back() const;
-	bool search(const Type&) const = 0;
-	void pushFront(const Type&) const = 0;
-	void pushLast(const Type&) const = 0;
-	void deleteNode(const Type&) const = 0;
+	virtual	bool search(const Type&) const = 0;
+	virtual void pushFront(const Type&) const = 0;
+	virtual void pushLast(const Type&) const = 0;
+	virtual void deleteNode(const Type&) const = 0;
 	Iterator<Type> begin();
 	Iterator<Type> end();
 	LinkedList();
@@ -100,7 +100,7 @@ Iterator<Type> LinkedList<Type>::end()
 template<typename Type>
 LinkedList<Type>::LinkedList()
 {
-
+	
 }
 
 template<typename Type>
@@ -112,5 +112,5 @@ LinkedList<Type>::LinkedList(const LinkedList<Type>&)
 template<typename Type>
 LinkedList<Type>::~LinkedList()
 {
-
+	
 }
