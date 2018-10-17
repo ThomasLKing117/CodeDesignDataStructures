@@ -14,14 +14,6 @@ public:
 template <typename Type>
 bool UnorderedLinkedList<Type>::search(const Type& item) const
 {
-	/*	nodeType<Type>* test = new nodeType<Type>;
-	for (int i = 0; i < this->count; i++)
-	{
-	if (test == item)
-	{
-	return true;
-	}
-	}*/
 	return false;
 }
 

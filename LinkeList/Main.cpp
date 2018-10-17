@@ -7,5 +7,6 @@ int main()
 	List->pushLast(2);
 	List->pushFront(3);
 	List->pushLast(4);
+	List->search(2);
 	return 0;
 }
