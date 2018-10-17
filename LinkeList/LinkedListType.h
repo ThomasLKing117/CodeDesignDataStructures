@@ -63,7 +63,7 @@ void LinkedList<Type>::print() const
 template<typename Type>
 int LinkedList<Type>::length() const
 {
-	return 0;
+	return count;
 }
 
 template<typename Type>
