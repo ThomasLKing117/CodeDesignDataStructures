@@ -5,49 +5,71 @@ template <typename Type>
 class UnorderedLinkedList : public LinkedList<Type>
 {
 public:
-	bool search(const Type& item) const override
-	{
+	bool search(const Type&) const override;
+	void pushFront(const Type&) override;
+	void pushLast(const Type&) override;
+	void deleteNode(const Type&) override;
+};
+
+template <typename Type>
+bool UnorderedLinkedList<Type>::search(const Type& item) const
+{
 	/*	nodeType<Type>* test = new nodeType<Type>;
-		for (int i = 0; i < this->count; i++)
-		{
-			if (test == item)
-			{
-				return true;
-			}
-		}*/
-		return false;
-	}
-
-	void pushFront(const Type& item) override
+	for (int i = 0; i < this->count; i++)
 	{
-		nodeType<Type>* test = new nodeType<Type>;
+	if (test == item)
+	{
+	return true;
+	}
+	}*/
+	return false;
+}
 
-		if (isEmptyList())
-		{
-			this->first = test;
-			this->last = test;
-			count++;
-		}
+template <typename Type>
+void UnorderedLinkedList<Type>::pushFront(const Type& item)
+{
+	nodeType<Type>* test = new nodeType<Type>;
+	test->info = item;
 
-		test->info = item;
-		test->next = this->first;
+	if (this->isEmptyList())
+	{
 		this->first = test;
-	}
-
-	void pushLast(const Type& item) override
-	{
-		nodeType<Type>* test = new nodeType<Type>;
-		test->info = item;
-		test->next = this->last;
 		this->last = test;
 		this->count++;
 	}
-
-	void deleteNode(const Type& item) override
+	else
 	{
-		
+		test->next = this->first;
+		this->first = test;
+		this->count++;
 	}
-};
+}
+
+template <typename Type>
+void UnorderedLinkedList<Type>::pushLast(const Type& item)
+{
+	nodeType<Type>* test = new nodeType<Type>;
+	test->info = item;
+
+	if (this->isEmptyList())
+	{
+		this->first = test;
+		this->last = test;
+		this->count++;
+	}
+	else
+	{
+		this->last->next = test;
+		this->last = test;
+		this->count++;
+	}
+}
+
+template <typename Type>
+void UnorderedLinkedList<Type>::deleteNode(const Type& item)
+{
+
+}
 
 //template<typename Type>
 //bool UnorderedLinkedList<Type>::search(const Type& item) const
