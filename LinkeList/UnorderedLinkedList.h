@@ -7,24 +7,31 @@ class UnorderedLinkedList : public LinkedList<Type>
 public:
 	bool search(const Type& item) const override
 	{
-		nodeType<Type>* test = new nodeType<Type>;
+	/*	nodeType<Type>* test = new nodeType<Type>;
 		for (int i = 0; i < this->count; i++)
 		{
 			if (test == item)
 			{
 				return true;
 			}
-		}
+		}*/
 		return false;
 	}
 
 	void pushFront(const Type& item) override
 	{
 		nodeType<Type>* test = new nodeType<Type>;
+
+		if (isEmptyList())
+		{
+			this->first = test;
+			this->last = test;
+			count++;
+		}
+
 		test->info = item;
 		test->next = this->first;
 		this->first = test;
-		this->count++;
 	}
 
 	void pushLast(const Type& item) override
