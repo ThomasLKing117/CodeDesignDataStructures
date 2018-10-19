@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include "Iterator.h"
 
 template <typename Type>
@@ -60,7 +61,13 @@ bool LinkedList<Type>::isEmptyList() const
 template<typename Type>
 void LinkedList<Type>::print() const
 {
-
+	nodeType<Type>* Iterate;
+	Iterate = this->first;
+	for (int i = 0; i < mCount; i++)
+	{
+		std::cout << Iterate->info << std::endl;
+		Iterate = Iterate->next;
+	}
 }
 
 template<typename Type>
@@ -90,13 +97,13 @@ Type LinkedList<Type>::back() const
 template<typename Type>
 Iterator<Type> LinkedList<Type>::begin()
 {
-	return Iterator<Type>();
+	return Iterator<Type>(first);
 }
 
 template<typename Type>
 Iterator<Type> LinkedList<Type>::end()
 {
-	return Iterator<Type>();
+	return Iterator<Type>(last);
 }
 
 template<typename Type>
