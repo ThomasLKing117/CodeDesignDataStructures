@@ -10,11 +10,11 @@ int main()
 	List->pushFront(3);
 	List->pushBack(4);
 	CopyList = List;
-	List->search(2);
-	List->deleteNode(4);
-	List->begin();
-	List->end();
-	List->print();
-	std::cout << "There are " << List->length() << " nodes..." << std::endl;
+	CopyList->search(2);
+	CopyList->deleteNode(4);
+	CopyList->begin();
+	CopyList->end();
+	CopyList->print();
+	std::cout << "There are " << CopyList->length() << " nodes..." << std::endl;
 	return 0;
 }
