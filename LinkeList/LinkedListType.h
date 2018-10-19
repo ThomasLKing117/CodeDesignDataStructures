@@ -17,7 +17,7 @@ public:
 	bool isEmptyList() const;
 	void print() const;
 	int length() const;
-	void destroyList() const;
+	void destroyList();
 	Type front() const;
 	Type back() const;
 	virtual	bool search(const Type&) const = 0;
@@ -40,7 +40,7 @@ void LinkedList<Type>::copyList(const LinkedList<Type>& copy)
 template<typename Type>
 const LinkedList<Type>& LinkedList<Type>::operator=(const LinkedList<Type>& assign)
 {
-	return first = assign;
+	return this->copylist(assign);
 }
 
 template<typename Type>
@@ -76,9 +76,26 @@ int LinkedList<Type>::length() const
 }
 
 template<typename Type>
-void LinkedList<Type>::destroyList() const
+void LinkedList<Type>::destroyList()
 {
-	delete LinkedList;
+	nodeType<Type>* test = new nodeType<Type>;
+	int temp = mCount;
+	for (int i = 0; i < temp; i++)
+	{
+		test = this->first;
+		if (mCount == 1)
+		{
+			delete first;
+			initalizeList();
+			return;
+		}
+		else
+		{
+			first = first->next;
+			delete test;
+			mCount--;
+		}
+	}
 }
 
 template<typename Type>
