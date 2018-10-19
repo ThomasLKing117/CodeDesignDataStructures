@@ -7,7 +7,7 @@ class LinkedList
 private:
 	void copyList(const LinkedList<Type>&);
 protected:
-	int count;
+	int mCount;
 	nodeType<Type> *first;
 	nodeType<Type> *last;
 public:
@@ -21,7 +21,7 @@ public:
 	Type back() const;
 	virtual	bool search(const Type&) const = 0;
 	virtual void pushFront(const Type&) = 0;
-	virtual void pushLast(const Type&) = 0;
+	virtual void pushBack(const Type&) = 0;
 	virtual void deleteNode(const Type&) = 0;
 	Iterator<Type> begin();
 	Iterator<Type> end();
@@ -46,7 +46,7 @@ const LinkedList<Type>& LinkedList<Type>::operator=(const LinkedList<Type>& assi
 template<typename Type>
 void LinkedList<Type>::initalizeList()
 {
-	count = 0;
+	mCount = 0;
 	first = nullptr;
 	last = nullptr;
 }
@@ -66,7 +66,7 @@ void LinkedList<Type>::print() const
 template<typename Type>
 int LinkedList<Type>::length() const
 {
-	return count;
+	return mCount;
 }
 
 template<typename Type>

@@ -1,4 +1,5 @@
 #pragma once
+
 template <typename Type>
 struct nodeType
 {
