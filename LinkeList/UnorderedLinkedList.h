@@ -14,12 +14,17 @@ public:
 template <typename Type>
 bool UnorderedLinkedList<Type>::search(const Type& item) const
 {
-	Iterator<Type> *Iterate;
+	nodeType<Type>* test = new nodeType<Type>;
+	Iterator<Type>* Iterate = new Iterator<Type>;
 	for (int i = 0; i < this->count; i++)
 	{
-		if (Iterate == item)
+		if (test->info == item)
 		{
 			return true;
+		}
+		if (test->info != item)
+		{
+			++Iterate;
 		}
 	}
 	return false;
