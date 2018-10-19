@@ -33,7 +33,8 @@ public:
 template<typename Type>
 void LinkedList<Type>::copyList(const LinkedList<Type>& copy)
 {
-	LinkedList = copy;
+	LinkedList<Type>* test = new LinkedList<Type>
+	test = copy;
 }
 
 template<typename Type>
