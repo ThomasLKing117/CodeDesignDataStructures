@@ -33,7 +33,7 @@ public:
 template<typename Type>
 void LinkedList<Type>::copyList(const LinkedList<Type>& copy)
 {
-	LinkedList<Type>* test = new LinkedList<Type>
+	LinkedList<Type>* test = new LinkedList<Type>;
 	test = copy;
 }
 
@@ -46,7 +46,9 @@ const LinkedList<Type>& LinkedList<Type>::operator=(const LinkedList<Type>& assi
 template<typename Type>
 void LinkedList<Type>::initalizeList()
 {
-
+	count = 0;
+	first = nullptr;
+	last = nullptr;
 }
 
 template<typename Type>

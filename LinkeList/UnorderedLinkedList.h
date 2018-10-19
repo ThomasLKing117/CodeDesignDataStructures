@@ -73,7 +73,8 @@ void UnorderedLinkedList<Type>::pushLast(const Type& item)
 template <typename Type>
 void UnorderedLinkedList<Type>::deleteNode(const Type& item)
 {
-
+	nodeType<Type>* testptr;
+	nodeType<Type>* delptr;
 }
 
 //template<typename Type>

@@ -3,6 +3,7 @@
 int main()
 {
 	UnorderedLinkedList<int>* List = new UnorderedLinkedList<int>();
+	List->initalizeList;
 	List->pushFront(1);
 	List->pushLast(2);
 	List->pushFront(3);
