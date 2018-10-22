@@ -35,7 +35,7 @@ template<typename Type>
 void LinkedList<Type>::copyList(const LinkedList<Type>& copy)
 {
 	this->LinkedList<Type> = copy;
-	destroyList(copy);
+	copy.destroyList();
 }
 
 template<typename Type>
@@ -133,7 +133,16 @@ LinkedList<Type>::LinkedList()
 template<typename Type>
 LinkedList<Type>::LinkedList(const LinkedList<Type>& item)
 {
+	this->first = new nodeType<Type>;
+	nodeType<Type>* test = &(this->first);
+	nodeType<Type>* copy = &(item.first);
 
+	for (int i = 0; i < mCount; i++)
+	{
+		copy->info = test->info;
+		test = test->next;
+		copy = copy->next;
+	}
 }
 
 template<typename Type>
