@@ -10,14 +10,15 @@ int main()
 	List.pushFront(3);
 	List.pushBack(4);
 
-	UnorderedLinkedList<int> CopyList(List);
+	UnorderedLinkedList<int> CopyList;
 
+	CopyList = List;
 	CopyList.search(2);
 	CopyList.deleteNode(4);
 	CopyList.pushBack(4);
 	CopyList.begin();
 	CopyList.end();
-	CopyList.print();
+	//CopyList.print();
 	std::cout << "There are " << CopyList.length() << " nodes..." << std::endl;
 	CopyList.destroyList();
 	std::cout << "The list is destroyed..." << std::endl;

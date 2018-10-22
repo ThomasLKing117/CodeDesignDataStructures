@@ -34,15 +34,16 @@ public:
 template<typename Type>
 void LinkedList<Type>::copyList(const LinkedList<Type>& copy)
 {
-	this->LinkedList<Type> = copy;
-	copy.destroyList();
+	for (int i = 0; i < this->mCount; i++)
+	{
+		this->pushBack(copy->info);
+	}
 }
 
 template<typename Type>
 const LinkedList<Type>& LinkedList<Type>::operator=(const LinkedList<Type>& assign)
 {
-	this->copylist(assign);
-	return *this;
+	return this->copylist(assign);
 }
 
 template<typename Type>
@@ -127,26 +128,34 @@ Iterator<Type> LinkedList<Type>::end()
 template<typename Type>
 LinkedList<Type>::LinkedList()
 {
-	
+	initalizeList();
 }
 
 template<typename Type>
 LinkedList<Type>::LinkedList(const LinkedList<Type>& item)
 {
 	this->first = new nodeType<Type>;
-	nodeType<Type>* test = &(this->first);
-	nodeType<Type>* copy = &(item.first);
+	nodeType<Type>* test = (item.first);
+	nodeType<Type>* copy = (this->first);
 
-	for (int i = 0; i < mCount; i++)
+	for (int i = 0; i < item.mCount; i++)
 	{
 		copy->info = test->info;
-		test = test->next;
+		this->mCount++;
+		if (i == (item.mCount - 1))
+		{
+			break;
+		}
+		copy->next = new nodeType<Type>;
 		copy = copy->next;
+		test = test->next;
 	}
+	last = test;
+	test->next = nullptr;
 }
 
 template<typename Type>
 LinkedList<Type>::~LinkedList()
 {
-	
+	destroyList();
 }
