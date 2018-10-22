@@ -3,16 +3,19 @@
 int main()
 {
 	UnorderedLinkedList<int>* List = new UnorderedLinkedList<int>();
-	UnorderedLinkedList<int>* CopyList = new UnorderedLinkedList<int>();
+
 	List->initalizeList();
 	List->pushFront(1);
 	List->pushBack(2);
 	List->pushFront(3);
 	List->pushBack(4);
+
+	UnorderedLinkedList<int>* CopyList = new UnorderedLinkedList<int>();
+
 	CopyList = List;
 	CopyList->search(2);
 	CopyList->deleteNode(4);
-	List->pushBack(4);
+	CopyList->pushBack(4);
 	CopyList->begin();
 	CopyList->end();
 	CopyList->print();

@@ -34,7 +34,7 @@ public:
 template<typename Type>
 void LinkedList<Type>::copyList(const LinkedList<Type>& copy)
 {
-	
+	destroyList(copy);
 }
 
 template<typename Type>
