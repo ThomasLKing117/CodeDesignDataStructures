@@ -34,16 +34,20 @@ public:
 template<typename Type>
 void LinkedList<Type>::copyList(const LinkedList<Type>& copy)
 {
-	for (int i = 0; i < this->mCount; i++)
+	this->destroyList();
+	nodeType<Type>* test = (copy.first);
+	for (int i = 0; i < copy.mCount; i++)
 	{
-		this->pushBack(copy->info);
+		this->pushBack(test->info);
+		test = test->next;
 	}
 }
 
 template<typename Type>
 const LinkedList<Type>& LinkedList<Type>::operator=(const LinkedList<Type>& assign)
 {
-	return this->copylist(assign);
+	this->copyList(assign);
+	return *this;
 }
 
 template<typename Type>
