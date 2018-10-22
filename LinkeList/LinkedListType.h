@@ -34,13 +34,15 @@ public:
 template<typename Type>
 void LinkedList<Type>::copyList(const LinkedList<Type>& copy)
 {
+	this->LinkedList<Type> = copy;
 	destroyList(copy);
 }
 
 template<typename Type>
 const LinkedList<Type>& LinkedList<Type>::operator=(const LinkedList<Type>& assign)
 {
-	return this->copylist(assign);
+	this->copylist(assign);
+	return *this;
 }
 
 template<typename Type>
@@ -129,7 +131,7 @@ LinkedList<Type>::LinkedList()
 }
 
 template<typename Type>
-LinkedList<Type>::LinkedList(const LinkedList<Type>&)
+LinkedList<Type>::LinkedList(const LinkedList<Type>& item)
 {
 
 }
