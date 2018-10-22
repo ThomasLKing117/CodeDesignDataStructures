@@ -9,7 +9,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inheritance", "Inheritance\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MorningWarmup", "MorningWarmup\MorningWarmup.vcxproj", "{5202E9E5-E6BD-405A-AC97-3D6E378A2080}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkeList", "LinkeList\LinkeList.vcxproj", "{63FFE309-C0FB-43D8-8C72-215429F1FC61}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedList", "LinkeList\LinkeList.vcxproj", "{63FFE309-C0FB-43D8-8C72-215429F1FC61}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithims", "Algorithims\Algorithims.vcxproj", "{381498BF-1AB6-438F-AAB1-2C5F332517F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,14 @@ Global
 		{63FFE309-C0FB-43D8-8C72-215429F1FC61}.Release|x64.Build.0 = Release|x64
 		{63FFE309-C0FB-43D8-8C72-215429F1FC61}.Release|x86.ActiveCfg = Release|Win32
 		{63FFE309-C0FB-43D8-8C72-215429F1FC61}.Release|x86.Build.0 = Release|Win32
+		{381498BF-1AB6-438F-AAB1-2C5F332517F3}.Debug|x64.ActiveCfg = Debug|x64
+		{381498BF-1AB6-438F-AAB1-2C5F332517F3}.Debug|x64.Build.0 = Debug|x64
+		{381498BF-1AB6-438F-AAB1-2C5F332517F3}.Debug|x86.ActiveCfg = Debug|Win32
+		{381498BF-1AB6-438F-AAB1-2C5F332517F3}.Debug|x86.Build.0 = Debug|Win32
+		{381498BF-1AB6-438F-AAB1-2C5F332517F3}.Release|x64.ActiveCfg = Release|x64
+		{381498BF-1AB6-438F-AAB1-2C5F332517F3}.Release|x64.Build.0 = Release|x64
+		{381498BF-1AB6-438F-AAB1-2C5F332517F3}.Release|x86.ActiveCfg = Release|Win32
+		{381498BF-1AB6-438F-AAB1-2C5F332517F3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
