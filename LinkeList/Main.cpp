@@ -190,16 +190,16 @@ int main()
 		//Result: All the node values are visible on the console
 		ThirdList.print();
 
-		//Expected: The begin method retruns the first node in the list
-		//Result: In this case it returns the node 117
+		//Expected: The begin method retruns the Iterator
+		//Result: In this case it returns the Iterator
 		ThirdList.begin();
 
 		//Expected: The front method returns the info of the first node in the list
 		//Result: In this case it returns the value 117
 		ThirdList.front();
 
-		//Expected: The end method retruns the last node in the list
-		//Result: In this case it returns the node 4
+		//Expected: The end method retruns the nullptr
+		//Result: In this case it returns nullptr
 		ThirdList.end();
 
 		//Expected: The back method returns the info of the last node in the list
