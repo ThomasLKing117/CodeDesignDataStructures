@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedList", "LinkeList\Lin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithims", "Algorithims\Algorithims.vcxproj", "{381498BF-1AB6-438F-AAB1-2C5F332517F3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hash", "Hash\Hash.vcxproj", "{B7A36E44-28A2-4607-B121-825B29596A50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{381498BF-1AB6-438F-AAB1-2C5F332517F3}.Release|x64.Build.0 = Release|x64
 		{381498BF-1AB6-438F-AAB1-2C5F332517F3}.Release|x86.ActiveCfg = Release|Win32
 		{381498BF-1AB6-438F-AAB1-2C5F332517F3}.Release|x86.Build.0 = Release|Win32
+		{B7A36E44-28A2-4607-B121-825B29596A50}.Debug|x64.ActiveCfg = Debug|x64
+		{B7A36E44-28A2-4607-B121-825B29596A50}.Debug|x64.Build.0 = Debug|x64
+		{B7A36E44-28A2-4607-B121-825B29596A50}.Debug|x86.ActiveCfg = Debug|Win32
+		{B7A36E44-28A2-4607-B121-825B29596A50}.Debug|x86.Build.0 = Debug|Win32
+		{B7A36E44-28A2-4607-B121-825B29596A50}.Release|x64.ActiveCfg = Release|x64
+		{B7A36E44-28A2-4607-B121-825B29596A50}.Release|x64.Build.0 = Release|x64
+		{B7A36E44-28A2-4607-B121-825B29596A50}.Release|x86.ActiveCfg = Release|Win32
+		{B7A36E44-28A2-4607-B121-825B29596A50}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
