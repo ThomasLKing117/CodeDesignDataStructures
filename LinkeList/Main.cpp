@@ -18,8 +18,16 @@ int main()
 		//Result: A new nodeType N3 created
 		nodeType<int>* N3 = new nodeType<int>;
 
+		//Expected: Give N1->info the value of 1
+		//Result: N1->info is assigned the value of 1
 		N1->info = 1;
+
+		//Expected: Give N2->info the value of 2
+		//Result: N2->info is assigned the value of 2
 		N2->info = 2;
+
+		//Expected: Give N3->info the value of 3
+		//Result: N3->info is assigned the value of 3
 		N3->info = 3;
 
 		N1->next = N2;
