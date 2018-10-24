@@ -10,12 +10,15 @@ int main()
 		nodeType<int>* N1 = new nodeType<int>;
 		nodeType<int>* N2 = new nodeType<int>;
 		nodeType<int>* N3 = new nodeType<int>;
+
 		N1->info = 1;
 		N2->info = 2;
 		N3->info = 3;
+
 		N1->next = N2;
 		N2->next = N3;
 		N3->next = nullptr;
+
 		Iterator<int> Iterate(N1);
 		for (int i = 0; i < 3; i++)
 		{
@@ -52,9 +55,7 @@ int main()
 		SecondList.insertLast(10);
 
 		SecondList.isEmptyList();
-
 		SecondList.destroyList();
-
 		SecondList.isEmptyList();
 
 		UnorderedLinkedList<int> ThirdList;
@@ -64,21 +65,15 @@ int main()
 
 		ThirdList.insertFirst(0);
 		ThirdList.insertLast(117);
-
 		ThirdList.search(117);
-
 		ThirdList.print();
 
 		ThirdList.deleteNode(117);
-
 		ThirdList.search(117);
-
 		ThirdList.print();
 
 		ThirdList.insertFirst(117);
-
 		ThirdList.search(117);
-
 		ThirdList.print();
 
 		ThirdList.begin();
@@ -91,6 +86,12 @@ int main()
 
 
 		UnorderedLinkedList<int> FourthList(ThirdList);
+		
+		FourthList.search(117);
+		FourthList.destroyList();
+		FourthList.search(117);
+		FourthList.insertFirst(117);
+		FourthList.search(117);
 
 		FirstList.destroyList();
 		ThirdList.destroyList();

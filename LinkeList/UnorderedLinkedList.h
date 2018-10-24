@@ -40,6 +40,7 @@ void UnorderedLinkedList<Type>::insertFirst(const Type& item)
 	{
 		this->first = test;
 		this->last = test;
+		test->next = nullptr;
 		this->mCount++;
 	}
 	else
