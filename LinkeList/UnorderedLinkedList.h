@@ -6,8 +6,8 @@ class UnorderedLinkedList : public LinkedList<Type>
 {
 public:
 	bool search(const Type&) const override;
-	void pushFront(const Type&) override;
-	void pushBack(const Type&) override;
+	void insertFirst(const Type&) override;
+	void insertLast(const Type&) override;
 	void deleteNode(const Type&) override;
 };
 
@@ -31,7 +31,7 @@ bool UnorderedLinkedList<Type>::search(const Type& item) const
 }
 
 template <typename Type>
-void UnorderedLinkedList<Type>::pushFront(const Type& item)
+void UnorderedLinkedList<Type>::insertFirst(const Type& item)
 {
 	nodeType<Type>* test = new nodeType<Type>;
 	test->info = item;
@@ -51,7 +51,7 @@ void UnorderedLinkedList<Type>::pushFront(const Type& item)
 }
 
 template <typename Type>
-void UnorderedLinkedList<Type>::pushBack(const Type& item)
+void UnorderedLinkedList<Type>::insertLast(const Type& item)
 {
 	nodeType<Type>* test = new nodeType<Type>;
 	test->info = item;

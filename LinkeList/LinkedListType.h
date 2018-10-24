@@ -21,8 +21,8 @@ public:
 	Type front() const;
 	Type back() const;
 	virtual	bool search(const Type&) const = 0;
-	virtual void pushFront(const Type&) = 0;
-	virtual void pushBack(const Type&) = 0;
+	virtual void insertFirst(const Type&) = 0;
+	virtual void insertLast(const Type&) = 0;
 	virtual void deleteNode(const Type&) = 0;
 	Iterator<Type> begin();
 	Iterator<Type> end();
@@ -38,7 +38,7 @@ void LinkedList<Type>::copyList(const LinkedList<Type>& copy)
 	nodeType<Type>* test = (copy.first);
 	for (int i = 0; i < copy.mCount; i++)
 	{
-		this->pushBack(test->info);
+		this->insertLast(test->info);
 		test = test->next;
 	}
 }
@@ -61,7 +61,11 @@ void LinkedList<Type>::initalizeList()
 template<typename Type>
 bool LinkedList<Type>::isEmptyList() const
 {
-	return (first == nullptr);
+	if (first == nullptr)
+	{
+		return true;
+	}
+	return false;
 }
 
 template<typename Type>
