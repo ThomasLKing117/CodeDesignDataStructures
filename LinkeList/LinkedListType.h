@@ -130,7 +130,7 @@ Iterator<Type> LinkedList<Type>::begin()
 template<typename Type>
 Iterator<Type> LinkedList<Type>::end()
 {
-	return Iterator<Type>(last);
+	return Iterator<Type>(nullptr);
 }
 
 template<typename Type>
