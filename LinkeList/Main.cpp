@@ -62,84 +62,84 @@ int main()
 		//Result: A new UnorderedLinkedList of type is created
 		UnorderedLinkedList<int> FirstList;
 
-		//Expected:
-		//Result:
+		//Expected: insert 1 in the first position in the FirstList
+		//Result: 1 is now in the first position of the FirstList
 		FirstList.insertFirst(1);
 
-		//Expected:
-		//Result:
+		//Expected: insert 2 in the last position in the FirstList
+		//Result: 2 is now in the last position of the FirstList
 		FirstList.insertLast(2);
 
-		//Expected:
-		//Result:
+		//Expected: insert 3 in the first position in the FirstList
+		//Result: 3 is now in the first position of the FirstList
 		FirstList.insertFirst(3);
 
-		//Expected:
-		//Result:
+		//Expected: insert 4 in the Last position in the FirstList
+		//Result: 4 is now in the Last position of the FirstList
 		FirstList.insertLast(4);
 
-		//Expected:
-		//Result:
+		//Expected: insert 5 in the first position in the FirstList
+		//Result: 5 is now in the first position of the Firstlist
 		FirstList.insertFirst(5);
 
 		//Expected: Create a new UnorderedLinkedList type called SecondList
 		//Result: A new UnorderedLinkedList of type is created
 		UnorderedLinkedList<int> SecondList;
 
-		//Expected:
-		//Result:
+		//Expected: insert 6 in the Last position in the SecondList
+		//Result: 6 is now in the Last position of the Secondlist
 		SecondList.insertLast(6);
 
-		//Expected:
-		//Result:
+		//Expected: insert a 7 in the first position in the SecondList
+		//Result: 7 is now in the first position of the SecondList
 		SecondList.insertFirst(7);
 
-		//Expected:
-		//Result:
+		//Expected: insert 8 in the Last position in the SecondList
+		//Result: 8 is now in the Last position of the SecondList
 		SecondList.insertLast(8);
 
-		//Expected:
-		//Result:
+		//Expected: insert a 9 in the first position in the SecondList
+		//Result: 9 is now in the first position of the SecondList
 		SecondList.insertFirst(9);
 
-		//Expected:
-		//Result:
+		//Expected: insert 10 in the Last position in the SecondList
+		//Result: 10 is now in the Last position of the SecondList
 		SecondList.insertLast(10);
 
-		//Expected:
-		//Result:
+		//Expected: Have the SecondList copy the FirstList
+		//Result: The SecondList and FirstList are identical and can be changed seperatly
 		SecondList = FirstList;
 
-		//Expected:
-		//Result:
+		//Expected: insert 6 in the Last position in the SecondList
+		//Result: 6 is now in the Last position of the SecondList
 		SecondList.insertLast(6);
 
-		//Expected:
-		//Result:
+		//Expected: insert a 7 in the first position in the SecondList
+		//Result: 7 is now in the first position of the SecondList
 		SecondList.insertFirst(7);
 
-		//Expected:
-		//Result:
+		//Expected: insert 8 in the Last position in the SecondList
+		//Result: 8 is now in the Last position of the SecondList
 		SecondList.insertLast(8);
 
-		//Expected:
-		//Result:
+		//Expected: insert a 9 in the first position in the SecondList
+		//Result: 9 is now in the first position of the SecondList
 		SecondList.insertFirst(9);
 
-		//Expected:
-		//Result:
+		//Expected: insert 10 in the Last position in the SecondList
+		//Result: 10 is now in the Last position of the SecondList
 		SecondList.insertLast(10);
 
-		//Expected:
-		//Result:
+		//Expected: The isEmptyList method checks to see if the SecondList is empty
+		//Result: In this case it should return false
 		SecondList.isEmptyList();
 
-		//Expected:
-		//Result:
+		//Expected: The destroyList method deletes all the nodes in a SecondList
+		//Result: Clears out the list
 		SecondList.destroyList();
 
-		//Expected:
-		//Result:
+		//Expected: The isEmptyList method checks to see if the SecondList is empty
+		//Result: In this case it should return true
 		SecondList.isEmptyList();
 
 		//Expected: Create a new UnorderedLinkedList type called ThirdList
@@ -150,12 +150,12 @@ int main()
 		//Result:
 		ThirdList = FirstList;
 
-		//Expected:
-		//Result:
+		//Expected: insert a 1 in the first position in the list 
+		//Result: 1 is now in the first position
 		ThirdList.insertFirst(0);
 
-		//Expected:
-		//Result:
+		//Expected: insert 2 in the Last position in the list 
+		//Result: 2 is now in the Last position
 		ThirdList.insertLast(117);
 
 		//Expected:
@@ -178,8 +178,8 @@ int main()
 		//Result:
 		ThirdList.print();
 
-		//Expected:
-		//Result:
+		//Expected: insert a 1 in the first position in the list 
+		//Result: 1 is now in the first position
 		ThirdList.insertFirst(117);
 
 		//Expected:
@@ -230,8 +230,8 @@ int main()
 		//Result:
 		FourthList.initalizeList();
 
-		//Expected:
-		//Result:
+		//Expected: insert a 1 in the first position in the list 
+		//Result: 1 is now in the first position
 		FourthList.insertFirst(117);
 
 		//Expected:
