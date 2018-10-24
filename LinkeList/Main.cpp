@@ -4,11 +4,18 @@ int main()
 {
 	//Start of Test Cases
 
-
 	//Test Case 1
 	{
+		//Expected: Create new nodetType
+		//Result: A new nodeType N3 created
 		nodeType<int>* N1 = new nodeType<int>;
+
+		//Expected: Create new nodetType
+		//Result: A new nodeType N3 created
 		nodeType<int>* N2 = new nodeType<int>;
+
+		//Expected: Create new nodetType
+		//Result: A new nodeType N3 created
 		nodeType<int>* N3 = new nodeType<int>;
 
 		N1->info = 1;
