@@ -64,10 +64,6 @@ int main()
 
 		//Expected:
 		//Result:
-		FirstList.initalizeList();
-
-		//Expected:
-		//Result:
 		FirstList.insertFirst(1);
 
 		//Expected:
@@ -89,10 +85,6 @@ int main()
 		//Expected: Create a new UnorderedLinkedList type called SecondList
 		//Result: A new UnorderedLinkedList of type is created
 		UnorderedLinkedList<int> SecondList;
-
-		//Expected:
-		//Result:
-		SecondList.initalizeList();
 
 		//Expected:
 		//Result:
@@ -153,10 +145,6 @@ int main()
 		//Expected: Create a new UnorderedLinkedList type called ThirdList
 		//Result: A new UnorderedLinkedList of type is created
 		UnorderedLinkedList<int> ThirdList;
-
-		//Expected:
-		//Result:
-		ThirdList.initalizeList();
 
 		//Expected:
 		//Result:
@@ -237,6 +225,10 @@ int main()
 		//Expected:
 		//Result:
 		FourthList.search(117);
+
+		//Expected:
+		//Result:
+		FourthList.initalizeList();
 
 		//Expected:
 		//Result:
