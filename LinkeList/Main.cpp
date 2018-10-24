@@ -6,16 +6,16 @@ int main()
 
 	//Test Case 1
 	{
-		//Expected: Create new nodetType of type int called N1
-		//Result: A new nodeType of type int is created
+		//Expected: Create new nodetType of type called N1
+		//Result: A new nodeType of type is created
 		nodeType<int>* N1 = new nodeType<int>;
 
-		//Expected: Create new nodetType of type int called N2
-		//Result: A new nodeType of type int is created
+		//Expected: Create new nodetType of type called N2
+		//Result: A new nodeType of type is created
 		nodeType<int>* N2 = new nodeType<int>;
 
-		//Expected: Create new nodetType of type int called N3
-		//Result: A new nodeType of type int is created called N1
+		//Expected: Create new nodetType of type called N3
+		//Result: A new nodeType of type is created called N1
 		nodeType<int>* N3 = new nodeType<int>;
 
 		//Expected: Give N1->info the value of 1
@@ -42,8 +42,8 @@ int main()
 		//Result: N3 is connected to nullptr
 		N3->next = nullptr;
 
-		//Expected: Create a Iterator of type int called Iterate
-		//Result: A new Iterator of type int is created
+		//Expected: Create a Iterator of type called Iterate
+		//Result: A new Iterator of type is created
 		Iterator<int> Iterate(N1);
 
 		//Expected: Create a for loop to increment the Iterator type for each node created
@@ -58,8 +58,8 @@ int main()
 
 	//Test Case 2
 	{
-		//Expected:
-		//Result:
+		//Expected: Create a new UnorderedLinkedList type called FirstList
+		//Result: A new UnorderedLinkedList of type is created
 		UnorderedLinkedList<int> FirstList;
 
 		//Expected:
@@ -86,8 +86,8 @@ int main()
 		//Result:
 		FirstList.insertFirst(5);
 
-		//Expected:
-		//Result:
+		//Expected: Create a new UnorderedLinkedList type called SecondList
+		//Result: A new UnorderedLinkedList of type is created
 		UnorderedLinkedList<int> SecondList;
 
 		//Expected:
@@ -150,8 +150,8 @@ int main()
 		//Result:
 		SecondList.isEmptyList();
 
-		//Expected:
-		//Result:
+		//Expected: Create a new UnorderedLinkedList type called ThirdList
+		//Result: A new UnorderedLinkedList of type is created
 		UnorderedLinkedList<int> ThirdList;
 
 		//Expected:
@@ -222,8 +222,8 @@ int main()
 		//Result:
 		ThirdList.length();
 
-		//Expected:
-		//Result:
+		//Expected: Create a new UnorderedLinkedList type called FourthList that takes in an argument of ThirdList
+		//Result: A new UnorderedLinkedList of type is created that is a copy of the ThirdList
 		UnorderedLinkedList<int> FourthList(ThirdList);
 		
 		//Expected:
