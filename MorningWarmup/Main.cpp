@@ -1,5 +1,14 @@
 #include <iostream>
 
+int main()
+{
+
+}
+
+
+
+
+
 ////Write a function called SumTo that accepts an integer parameter N and returns the sum of all integers from 1 to N, including N.
 //
 //int SumTo(int N)
