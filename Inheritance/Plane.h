@@ -1,6 +1,6 @@
 #include "TransportVehicle.h"
 
-class Plane :TransportVehicle
+class Plane : TransportVehicle
 {
 private:
 	void Fly();
