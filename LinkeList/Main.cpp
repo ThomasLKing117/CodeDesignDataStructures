@@ -264,6 +264,6 @@ int main()
 	}
 
 	//End of Test Cases
-
+	system("pause");
 	return 0;
 }
