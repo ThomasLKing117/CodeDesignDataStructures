@@ -75,9 +75,11 @@ void LinkedList<Type>::print() const
 	Iterate = this->first;
 	for (int i = 0; i < mCount; i++)
 	{
-		std::cout << Iterate->info << std::endl;
+		std::cout << Iterate->info << " ";
 		Iterate = Iterate->next;
 	}
+	std::cout << "\n";
+	system("pause");
 }
 
 template<typename Type>
