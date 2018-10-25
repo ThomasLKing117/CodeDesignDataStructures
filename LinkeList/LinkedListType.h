@@ -80,6 +80,7 @@ void LinkedList<Type>::print() const
 	}
 	std::cout << "\n";
 	system("pause");
+	system("cls");
 }
 
 template<typename Type>
