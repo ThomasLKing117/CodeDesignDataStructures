@@ -123,35 +123,3 @@ void UnorderedLinkedList<Type>::deleteNode(const Type& item)
 		}
 	}
 }
-
-//template<typename Type>
-//bool UnorderedLinkedList<Type>::search(const Type& item) const
-//{
-//	return false;
-//}
-//
-//template<typename Type>
-//void UnorderedLinkedList<Type>::pushFront(const Type& item)
-//{
-//	nodeType<Type>* test = new nodeType<Type>;
-//	test->info = item;
-//	test->next = this->first;
-//	this->first = test;
-//	this->count++;
-//}
-//
-//template<typename Type>
-//void UnorderedLinkedList<Type>::pushLast(const Type& item)
-//{
-//	nodeType<Type>* test = new nodeType<Type>;
-//	test->info = item;
-//	test->next = this->last;
-//	this->last = test;
-//	this->count++;
-//}
-//
-//template<typename Type>
-//void UnorderedLinkedList<Type>::deleteNode(const Type& item)
-//{
-//	delete item;
-//}
