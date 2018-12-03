@@ -51,5 +51,7 @@ int main()
 	//print out the value in the 5th index of the array
 	std::cout << MyArray.getData(5) << std::endl;
 
+	system("pause");
+
 	return 0;
 }
